@@ -1,0 +1,27 @@
+# Gradle specific
+eureka-server/.gradle/
+eureka-server/build/
+eureka-server/out/
+gateway/.gradle/
+gateway/build/
+gateway/out/
+order/.gradle/
+order/build/
+order/out/
+notification/.gradle/
+notification/build/
+notification/out/
+payment/.gradle/
+payment/build/
+payment/out/
+
+!gradle-wrapper.jar
+
+# Ignore Gradle wrapper logs
+**/gradle/wrapper/gradle-wrapper.log
+
+# Ignore IntelliJ IDEA files
+**/.idea/
+
+# Ignore MacOS .DS_Store files
+.DS_Store

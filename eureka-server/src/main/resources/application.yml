@@ -1,0 +1,12 @@
+spring:
+  application:
+    name: eureka-server
+server:
+  port: 8761
+
+eureka:
+  client:
+    registerWithEureka: false # 클러스터라면 어떤 값으로 설정할까요?
+    fetchRegistry: false
+  server:
+    enableSelfPreservation: false

@@ -1,0 +1,20 @@
+spring:
+  application:
+    name: gateway
+  cloud:
+    gateway:
+      discovery:
+        locator:
+          enabled: true
+      routes:
+      - id: order-msa  # 라우트 식별자
+        uri: lb://order-msa
+        predicates:
+        - Path=/orders/**
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
+server:
+  port: 9999

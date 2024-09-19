@@ -1,0 +1,17 @@
+### 주문 등록
+POST http://localhost:9999/orders
+Content-Type: application/json
+
+{
+  "productId": 1,
+  "quantity": 10,
+  "customerEmail": "test@gmail.com",
+  "totalPrice": 1000000
+}
+
+### 주문 전체조회
+GET http://localhost:9999/orders
+
+###
+
+
